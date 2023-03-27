@@ -11,6 +11,7 @@ class Agent {
     this.#api = new ChatGPTAPI({
       apiKey,
       completionParams: {
+        model: "gpt-4",
         temperature: 1,
         presence_penalty: 0,
       },

@@ -16,6 +16,7 @@ const git_diff_out_str = new TextDecoder().decode(git_diff_out);
 const api = new ChatGPTAPI({
   apiKey,
   completionParams: {
+    model: "gpt-4",
     temperature: 0,
     presence_penalty: 0,
   },
